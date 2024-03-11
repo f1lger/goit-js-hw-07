@@ -12,6 +12,10 @@ function checkingForEmptyFields(event) {
     return alert("All form fields must be filled in");
   }
 
-  console.log(`Email: ${emailFields}, Password: ${passwordFields}`);
+  const formData = {
+    email: emailFields.trim(),
+    password: passwordFields.trim(),
+  };
+  console.log(formData);
   form.reset();
 }
